@@ -133,9 +133,7 @@
   justify-content: center;
 }
 .midle_content_modal .icon_card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
 }
 .midle_content_modal .icon {
   display: flex;
@@ -158,6 +156,5 @@
   margin-top: 0;
 }
 .midle_content_modal .midle_icon p {
-  margin-top: 5g0px;
-  text-align: center;
+  position: absolute;
 }/*# sourceMappingURL=index.css.map */
