@@ -2,18 +2,37 @@
    src:  url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,900&display=swap');
    src:  url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,900&family=Raleway&display=swap');
 } 
+html{
+    margin: 0;
+    padding: 0;
 
+}
+.body{
+
+
+}
 .content{
-    position: sticky;
-    top: 0;
     margin-right: auto;
     margin-left: auto;
-    max-width: 1920px;
+    width: 1920px;
+    height: 0px;
+}
+
+.content_header{
+    position: fixed;
+    top: 0;
+    // right: 35%;
+    // left: 34.4%;
+    right: auto;
+    left: auto;
+    width: 1920px;
     height: 100px;
     background-color: #10101DE5;
     display: flex;
     opacity: 0.9;
     font-family: 'Lato', sans-serif;
+
+    z-index: 2;
 
 }
 
@@ -45,14 +64,20 @@ a:hover{
 }
 }
 .midle_content{
-    margin-top: 0;
     margin-right: auto;
     margin-left: auto;
+    z-index: 1;
+    position: relative;
+    margin-top: 0;
     width: 1920px;
     height: 850px;
     background-size: 1920px 850px;
     background-image: url(media/personal.png);
     background-repeat: no-repeat;
+    // right: 35%;
+    // left: 34.4%;
+    right: auto;
+    left: auto;
 }
 .midle_content_text{
     margin-left: 375px;
@@ -107,6 +132,7 @@ a:hover{
 
 }
 .midle_content_map{
+   
     margin-top: 255px;
     background-image: url(media/BG.png);
     background-color: #000;
@@ -116,30 +142,47 @@ a:hover{
     height: 850px;
 }
 .midle_content_modal{
-  
+    position: absolute;
+    top: 1000px;
+    right: 20%;
+    left: 20%;
+    width: 1172px;
     h1{
         text-align: center;
+        margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
         text-transform: uppercase;
         font-size: 36px;
         font-weight: 800;
         color: #fff;
-    }
+        width: 429px;
+        }
     span{
         color: #43ABF0;
     }
     p{
         text-align: center;
+        margin-bottom: 80px;
+        margin-left: auto;
+        margin-right: auto;
         color:  #BBBBBB;
         font-size: 18px;
-        font-weight: 400;      
+        font-weight: 400;     
+        width: 555px; 
     }
     .midle_icon{
         display: flex;
         justify-content: center;
+        
      
     }
     .icon_card{
         position: relative;
+        
+        width: 209px;
+        height: 164px;
+        align-items: center;
     }
     .icon{
         display: flex;
@@ -149,20 +192,227 @@ a:hover{
         height: 100px;
         background-color: #43ABF0;
         border-radius: 50%;
+        margin-left: 40px;
         border: 5px solid #286690;
     }
-    .icon img{
+    .icon_img{
         text-align: center;
         width: 55px;
         height: 55px;
     }
-    img{
-        margin-right: 10px;
-        margin-left: 10px;
-        margin-top: 0;
+.group_dt{
+
+         margin-right: 10px;
+        padding-left: 30px;
+        margin-top: 50px;
+        width: 110px;
+        height: 6px;
     }
     .midle_icon p{
         position: absolute;
+        font-size: 16px;
+        font-weight: 400;
+        width: 188px;
+        left: 0;
     
+    }
+}
+.form_content{
+    position: absolute;
+    top: 1400px;
+    left: 20%;
+  
+}
+.form_content_header{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+.custom-select {
+    position: relative;
+    width: 375px;
+    height: 48px;
+  
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+   
+
+
+  }
+.custom-select::before{
+    content: url(media/arrow2.svg);
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    width: 10px;
+    height: 10px;
+    background-size: 200px  200px;
+    background-repeat: no-repeat;
+    
+
+}
+  
+  .select-trigger {
+    padding: 10px;
+    background-color: #fff;
+    cursor: pointer;
+    height: 32px;
+    border: 1px solid #000;
+  }
+
+  .select-options {
+    overflow: auto;
+    display: none;
+    position: absolute;
+    width: 100%;
+    max-height: 228px;
+    overflow-y: auto;
+    background-color: #3D4050;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    border: 1px solid #ccc;
+  }
+  
+  .select-option {
+    padding: 10px;
+    cursor: pointer;
+  }
+  .select-option:hover {
+    color: #43ABF0;
+    background-color: #3D4050;
+  }
+  
+
+input{
+    width: 360px;
+    height: 48px; 
+    padding-left: 10px;
+}
+.slider{
+    position: relative;
+    width: 777px;
+    height: 48px;
+    input{
+        width: 777px;
+    }
+
+}
+#sliderValue{
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #286690;
+}
+.btn_input{
+    text-transform: uppercase;
+    width: 370px;
+    height: 48px; 
+    background-color: #fff;
+    border: 1px solid #000;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    color: #000;
+
+}
+.btn_input::before{
+    content: url(media/page.svg);
+    position: absolute;
+    right: 270px;
+}
+.form_input_btn{
+    text-transform: uppercase;
+    width: 380px;
+    height: 48px;
+    color: #fff;
+    background-color: #3E9CDC;
+    border: 1px solid #fff;
+    margin-left: 35%;
+    margin-right: auto;
+
+}
+.from_slider{
+    display: flex;
+    gap: 40px;
+    margin-bottom: 30px;    
+}
+
+.footer{
+    width: 1920px;
+    height: 80px;
+    background-color: #3D4050;
+    margin-top: 848px;
+    display: flex;
+    gap: 40px;
+    padding-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+ 
+    h3{
+        font-family: 'Lato', sans-serif;
+        font-size: 13px;
+        color: #fff;
+        margin-left: 375px;
+    }
+    .footer__payment-resources{
+        position: relative;
+        display: flex;
+        margin-left: 40px;
+        gap: 38px;
+    }
+    .footer__contact-info{
+        display: flex;
+        margin-left: 40px;
+        gap: 38px;
+    }
+    .footer__payment-resource_Qiwi{
+        width: 99px;
+        height: 22px;
+        color:  #C3C3C3;
+        font-size: 13px;
+    }
+    .footer__payment-resource_Qiwi::before{
+        content: url(media/icon/Qiwi.svg);
+        position: absolute;
+        
+    }
+    .footer__payment-resource_buy{
+        width: 112px;
+        height: 20px;
+        color:  #C3C3C3;
+        font-size: 13px;
+        
+    }
+    .footer__payment-resource_buy::before{
+        content: url(media/icon/buy.svg);
+    }
+    .footer__contact_email{
+        width: 100px;
+        height: 20px;
+        color:  #C3C3C3;
+        font-size: 13px;
+
+    }
+    .footer__contact_email::before{
+        content: url(media/icon/miniMail.svg);
+    }
+    .footer__contact_B{
+        width: 125px;
+        height: 20px;
+        color:  #C3C3C3;
+        font-size: 13px;
+    }
+    .footer__contact_B::before{
+        content: url(media/icon/B.svg);
+    }
+    .footer__payment-resource_web{
+        width: 100px;
+        height: 20px;
+        color:  #C3C3C3;
+        font-size: 13px;
+    }
+    .footer__payment-resource_web::before{
+        content: url(media/icon/Web.svg);
     }
 }

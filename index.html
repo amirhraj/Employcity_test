@@ -7,15 +7,18 @@
     <title>Lending</title>
 </head>
 <body>
+<div class="body">
     <header class="content">
-        <div class="content_logo">
-            <img src="media/LoremIpsum.Net.svg" alt="">
-        </div>
-        <div class="content_link">
-            <a href="">Бизнес</a>
-            <a href="">О нас</a>
-            <a href="">Цены</a>
-            <a href="">Оформить заказ</a>
+        <div class="content_header">
+            <div class="content_logo">
+                <img src="media/LoremIpsum.Net.svg" alt="">
+            </div>
+            <div class="content_link">
+                <a href="">Бизнес</a>
+                <a href="">О нас</a>
+                <a href="">Цены</a>
+                <a href="">Оформить заказ</a>
+            </div>
         </div>
     </header>
     <main> 
@@ -42,44 +45,84 @@
                 <div class="midle_icon">
                     <div class="icon_card">
                         <div class="icon">
-                            <img src="media/icon/search.svg" alt="">
+                            <img  class="icon_img"  src="media/icon/search.svg" alt="">
                         </div>
                         <p>Lorem ipsum dolor sit amet</p>
                     </div>
-                    <img src="media/icon/groupdot.svg" alt="">
+                    <img class="group_dt" src="media/icon/groupdot.svg" alt="">
                     <div class="icon_card">
                         <div class="icon">
-                            <img src="media/icon/procent.svg" alt="">
+                            <img  class="icon_img" src="media/icon/procent.svg" alt="">
                         </div>
                         <p>Lorem ipsum dolor sit amet</p>
                     </div>
-                    <img src="media/icon/groupdot.svg" alt="">
+                    <img class="group_dt" src="media/icon/groupdot.svg" alt="">
                     <div class="icon_card">
                         <div class="icon">
-                            <img src="media/icon/paper.svg" alt="">
+                            <img class="icon_img"  src="media/icon/paper.svg" alt="">
                         </div>
                         <p>Lorem ipsum dolor sit amet</p>
                     </div>
-                    <img src="media/icon/groupdot.svg" alt="">
+                    <img class="group_dt" src="media/icon/groupdot.svg" alt="">
                     <div class="icon_card">
                         <div class="icon">
-                            <img src="media/icon/email.svg" alt="">
+                            <img  class="icon_img" src="media/icon/email.svg" alt="">
                         </div>
                         <p>Lorem ipsum dolor sit amet</p>
                     </div>
-                    <img src="media/icon/groupdot.svg" alt="">
+                    <img class="group_dt" src="media/icon/groupdot.svg" alt="">
                     <div class="icon_card">
                         <div class="icon">
-                            <img src="media/icon/value.svg" alt="">
+                            <img class="icon_img"  src="media/icon/value.svg" alt="">
                         </div> 
                         <p>Lorem ipsum dolor sit amet</p>
                     </div>
                 </div>
             </div>
+            <div class="form_content">
+                <div class="form_content_header">
+                <div class="custom-select">
+                    <div class="select-trigger">Выберите тип системы</div>
+                    <div class="select-options">
+                      <div class="select-option">Опция 1</div>
+                      <div class="select-option">Опция 2</div>
+                      <div class="select-option">Опция 3</div>
+                    </div>
+                  </div>
+                    <form action="">
+                        <input placeholder="Ваше имя" type="text">
+                    </form>
+                    <form action="">
+                        <input placeholder="Ваш email" type="text">
+                    </form>
+                </div>
+                <div class="from_slider">
+                    <div class="slider">
+                        <input type="range" min="0" max="100" value="50" step="1" onchange="handleSliderChange(event)">
+                        <span id="sliderValue">50%</span>
+                    </div>
+                    <button class="btn_input"> Прикрепить файл</button>
+                </div>
+                    <button class="form_input_btn">  Отправить</button>
+            </div>
         </div>
 
     </main>
-    
+    <footer class="footer">
+        <div>
+            <h3>© 2018 «LoremIpsum.net» Все права защищены.</h3>
+        </div>
+        <div class="footer__payment-resources">
+            <div class="footer__payment-resource_Qiwi">Qiwi wallet</div>
+            <div class="footer__payment-resource_buy">Yandex Money</div>
+            <div class="footer__payment-resource_web">Web Money</div>
+         </div>
+         <div class="footer__contact-info">
+            <div class="footer__contact_email">info@ipsum228.com</div>
+            <div class="footer__contact_B">Мы вконтакте</div>
+        </div>
+    </footer>
+</div>
     <script src="index.js" ></script>
 </body>
 </html>
