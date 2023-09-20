@@ -337,45 +337,59 @@ input {
   font-size: 13px;
   color: #fff;
   margin-left: 375px;
+  margin-top: 30px;
 }
 .footer .footer__payment-resources {
   position: relative;
   display: flex;
   margin-left: 40px;
   gap: 38px;
+  align-items: center;
 }
 .footer .footer__contact-info {
+  position: relative;
   display: flex;
   margin-left: 40px;
   gap: 38px;
+  align-items: center;
 }
 .footer .footer__payment-resource_Qiwi {
   width: 99px;
   height: 22px;
   color: #C3C3C3;
   font-size: 13px;
+  margin-left: 20px;
 }
 .footer .footer__payment-resource_Qiwi::before {
   content: url(media/icon/Qiwi.svg);
   position: absolute;
+  left: 0px;
 }
 .footer .footer__payment-resource_buy {
   width: 112px;
   height: 20px;
   color: #C3C3C3;
   font-size: 13px;
+  margin-left: 20px;
 }
 .footer .footer__payment-resource_buy::before {
   content: url(media/icon/buy.svg);
+  position: absolute;
+  left: 150px;
+  top: 25px;
 }
 .footer .footer__contact_email {
   width: 100px;
   height: 20px;
   color: #C3C3C3;
   font-size: 13px;
+  margin-left: 30px;
 }
 .footer .footer__contact_email::before {
   content: url(media/icon/miniMail.svg);
+  position: absolute;
+  left: 0px;
+  top: 28px;
 }
 .footer .footer__contact_B {
   width: 125px;
@@ -385,6 +399,9 @@ input {
 }
 .footer .footer__contact_B::before {
   content: url(media/icon/B.svg);
+  position: absolute;
+  right: 125px;
+  top: 28px;
 }
 .footer .footer__payment-resource_web {
   width: 100px;
@@ -394,4 +411,7 @@ input {
 }
 .footer .footer__payment-resource_web::before {
   content: url(media/icon/Web.svg);
+  position: absolute;
+  right: 100px;
+  top: 25px;
 }/*# sourceMappingURL=index.css.map */
